@@ -6,13 +6,13 @@ const FirstApp = ({ name = "default" }) => {
     return (
         <>
             <h1> { greetings } </h1>
-            <h5>- {name} -</h5>
+            <h5>{name}</h5>
         </>
     );
 }
 
 FirstApp.propTypes = {
-    name: PropTypes.string, // .isRequired,
+    name: PropTypes.string.isRequired,
 }
 
 FirstApp.defaultProps = {
